@@ -1,3 +1,6 @@
+/* pendiente-> reto de DATA: hacer que cuando hago un hover 
+en la imagen aparezca la imagen del pokemon de espaldas (data.sprites.back_default) */
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f2f2f2;
@@ -22,7 +25,6 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-
   padding: 20px;
 }
 
@@ -45,7 +47,7 @@ header {
   border-radius: 4px;
 }
 
-#searchBtn, #prevBtn, #nextBtn, #resetBtn {
+#searchBtn, #prevBtn, #nextBtn, #resetBtn, a, #resetFavoritesBtn, #home {
   margin: 10px 0;
   padding: 10px;
   border: none;
@@ -58,12 +60,17 @@ header {
   color: white;
 }
 
-#prevBtn, #nextBtn, #resetBtn {
+
+#prevBtn, #nextBtn, #resetBtn, #resetFavoritesBtn {
   background-color: #2196F3;
   color: white;
 }
 
-#searchBtn:hover, #prevBtn:hover, #nextBtn:hover, #resetBtn:hover {
+#resetFavoritesBtn{
+  margin-left: 10px;
+}
+
+#searchBtn:hover, #prevBtn:hover, #nextBtn:hover, #resetBtn:hover, a:hover, #resetFavoritesBtn:hover, #home:hover {
   opacity: 0.8;
 }
 
@@ -76,8 +83,23 @@ header {
   border-radius: 2px;
   width: 200px;
   height: 200px;
+  margin-bottom: 30px;
 }
 
 .card img {
   width: 150px;
+}
+
+span {
+  font-size: 40px; 
+  cursor: pointer;
+  color: gold;
+   
+}
+
+a, #home {
+  text-decoration: none;
+  background-color: orange;
+  color: white;
+  font-size: 14px;
 }
